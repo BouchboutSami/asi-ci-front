@@ -19,7 +19,7 @@ const HeroSection = () => {
           <FaLongArrowAltRight />
         </button>
       </div>
-      <div className="right">
+      <div className="right inline">
         <img src="/images/Hero.png" alt="Informatque" />
       </div>
     </div>

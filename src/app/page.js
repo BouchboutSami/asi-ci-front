@@ -6,7 +6,7 @@ import Themes from "@/components/Themeshome/Themes";
 
 export default function Home() {
   return (
-    <div className="w-screen h-min-screen flex flex-col gap-10">
+    <div className="w-[100% - 4px] h-min-screen flex flex-col gap-10">
       <Navbar />
       <HeroSection />
       <Divider />

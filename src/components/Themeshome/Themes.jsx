@@ -1,10 +1,10 @@
 import React from "react";
-import Accordionthemes from "./AccordionThemes";
 import Contactrfce from "./Contactrfce";
+import Accordionthemes from "./Accordionthemes";
 
 const Themes = () => {
   return (
-    <div className="w-full flex flex-row justify-center items-center gap-[10%]">
+    <div className="w-full flex flex-row justify-center gap-2 px-[2%]">
       <Accordionthemes />
       <Contactrfce />
     </div>
