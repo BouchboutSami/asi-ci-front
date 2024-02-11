@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const HeroSection = () => {
+  const formationsRef = useRef();
   return (
     <div className="w-full flex items-center justify-between font-montserrat pl-[5%]">
       <div className="left flex flex-col gap-10">
@@ -14,7 +16,14 @@ const HeroSection = () => {
           Votre Portail vers des Programmes de Formation Expertement <br />
           Conçus par des Formateurs Compétents
         </p>
-        <button className="bg-blue text-white flex w-fit px-6 py-3 justify-center items-center gap-4 rounded-md">
+        <button
+          className="bg-blue text-white flex w-fit px-6 py-3 justify-center items-center gap-4 rounded-md"
+          onClick={(event) => {
+            event.preventDefault();
+            const element = document.getElementById("formations");
+            element?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           <p className="font-montserrat font-medium">Voir nos formations</p>
           <FaLongArrowAltRight />
         </button>

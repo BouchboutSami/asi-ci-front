@@ -4,7 +4,7 @@ import { MdMailOutline } from "react-icons/md";
 
 const Contactrfce = () => {
   return (
-    <div className="w-[35%] bg-darkblue flex flex-col p-[2%] text-white gap-10">
+    <div className="w-[35%] bg-darkblue flex flex-col p-[2%] text-white gap-10 h-max">
       <div className="Dahak flex flex-col gap-10">
         <h1 className="text-sm font-semibold leading-6">
           DIRECTEUR ADJOINT DES RELATIONS EXTÉRIEURES ET DE LA FORMATION

@@ -10,10 +10,20 @@ module.exports = {
       white: "#ffffff",
       blue: "#1E73BE",
       grey: "#737373",
+      lightgrey: "#F3F3F3",
       darkblue: "#252B42",
     },
 
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 25s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       fontFamily: {
         montserrat: ["Montserrat"],
       },
